@@ -1,0 +1,32 @@
+class Caixa {
+
+
+    saldo: number;
+    constructor(psaldo: number) {
+        this.saldo = psaldo
+    }
+
+    depositar(psaldo: number) {
+
+        this.saldo += psaldo
+
+
+    }
+
+    sacar(psaldo: number) {
+        this.saldo -= psaldo
+
+    }
+
+    mostrarSaldo() {
+        return this.saldo
+
+    }
+}
+
+        let conta = new Caixa(1000)
+        conta.depositar(500)
+        conta.sacar(250)
+    
+
+         console.log(conta.mostrarSaldo())
